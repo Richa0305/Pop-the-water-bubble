@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA18EC5A1EF3C3110033C231 /* GameLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA18EC591EF3C3110033C231 /* GameLevels.swift */; };
+		EA8085CB1E940A0C0008F5A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8085CA1E940A0C0008F5A2 /* AppDelegate.swift */; };
+		EA8085CD1E940A0C0008F5A2 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA8085CC1E940A0C0008F5A2 /* GameScene.sks */; };
+		EA8085CF1E940A0C0008F5A2 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EA8085CE1E940A0C0008F5A2 /* Actions.sks */; };
+		EA8085D11E940A0C0008F5A2 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8085D01E940A0C0008F5A2 /* GameScene.swift */; };
+		EA8085D31E940A0C0008F5A2 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8085D21E940A0C0008F5A2 /* GameViewController.swift */; };
+		EA8085D61E940A0C0008F5A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8085D41E940A0C0008F5A2 /* Main.storyboard */; };
+		EA8085D81E940A0C0008F5A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8085D71E940A0C0008F5A2 /* Assets.xcassets */; };
+		EA8085DB1E940A0C0008F5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA8085D91E940A0C0008F5A2 /* LaunchScreen.storyboard */; };
+		EA8085E61E940A0C0008F5A2 /* Pop_the_water_bubbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8085E51E940A0C0008F5A2 /* Pop_the_water_bubbleTests.swift */; };
+		EA8085F11E940A0C0008F5A2 /* Pop_the_water_bubbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8085F01E940A0C0008F5A2 /* Pop_the_water_bubbleUITests.swift */; };
+		EA8085FF1E940F810008F5A2 /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = EA8085FE1E940F810008F5A2 /* pop.wav */; };
+		EA8086011E94155B0008F5A2 /* BubbleMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8086001E94155B0008F5A2 /* BubbleMainMenu.swift */; };
+		EA8086031E9415A40008F5A2 /* BubbleGameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8086021E9415A40008F5A2 /* BubbleGameOver.swift */; };
+		EAE7131B1EEDB73800EFC2BF /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE7131A1EEDB73800EFC2BF /* Chartboost.framework */; };
+		EAE7131F1EEDB91000EFC2BF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE7131E1EEDB91000EFC2BF /* StoreKit.framework */; };
+		EAE713211EEDB91900EFC2BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE713201EEDB91900EFC2BF /* Foundation.framework */; };
+		EAE713231EEDB92600EFC2BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE713221EEDB92600EFC2BF /* CoreGraphics.framework */; };
+		EAE713251EEDB93000EFC2BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE713241EEDB93000EFC2BF /* UIKit.framework */; };
+		EAF33F711E98BE4400CAF2CF /* gameover.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAF33F6F1E98BE4400CAF2CF /* gameover.wav */; };
+		EAF33F731E98C1F100CAF2CF /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAF33F721E98C1F100CAF2CF /* click.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA8085E21E940A0C0008F5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA8085BF1E940A0B0008F5A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA8085C61E940A0B0008F5A2;
+			remoteInfo = "Disappearing Bubbles";
+		};
+		EA8085ED1E940A0C0008F5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA8085BF1E940A0B0008F5A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA8085C61E940A0B0008F5A2;
+			remoteInfo = "Disappearing Bubbles";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA18EC591EF3C3110033C231 /* GameLevels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLevels.swift; sourceTree = "<group>"; };
+		EA8085C71E940A0C0008F5A2 /* Pop the Bubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pop the Bubble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8085CA1E940A0C0008F5A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA8085CC1E940A0C0008F5A2 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		EA8085CE1E940A0C0008F5A2 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		EA8085D01E940A0C0008F5A2 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		EA8085D21E940A0C0008F5A2 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EA8085D51E940A0C0008F5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA8085D71E940A0C0008F5A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA8085DA1E940A0C0008F5A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA8085DC1E940A0C0008F5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8085E11E940A0C0008F5A2 /* Pop the water bubbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pop the water bubbleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8085E51E940A0C0008F5A2 /* Pop_the_water_bubbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pop_the_water_bubbleTests.swift; sourceTree = "<group>"; };
+		EA8085E71E940A0C0008F5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8085EC1E940A0C0008F5A2 /* Pop the water bubbleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pop the water bubbleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8085F01E940A0C0008F5A2 /* Pop_the_water_bubbleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pop_the_water_bubbleUITests.swift; sourceTree = "<group>"; };
+		EA8085F21E940A0C0008F5A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA8085FE1E940F810008F5A2 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		EA8086001E94155B0008F5A2 /* BubbleMainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleMainMenu.swift; sourceTree = "<group>"; };
+		EA8086021E9415A40008F5A2 /* BubbleGameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleGameOver.swift; sourceTree = "<group>"; };
+		EAE7131A1EEDB73800EFC2BF /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		EAE7131C1EEDB77800EFC2BF /* Pop the water bubble-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pop the water bubble-Bridging-Header.h"; sourceTree = "<group>"; };
+		EAE7131E1EEDB91000EFC2BF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EAE713201EEDB91900EFC2BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAE713221EEDB92600EFC2BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAE713241EEDB93000EFC2BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAF33F6F1E98BE4400CAF2CF /* gameover.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gameover.wav; sourceTree = "<group>"; };
+		EAF33F721E98C1F100CAF2CF /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA8085C41E940A0B0008F5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE713251EEDB93000EFC2BF /* UIKit.framework in Frameworks */,
+				EAE713231EEDB92600EFC2BF /* CoreGraphics.framework in Frameworks */,
+				EAE713211EEDB91900EFC2BF /* Foundation.framework in Frameworks */,
+				EAE7131F1EEDB91000EFC2BF /* StoreKit.framework in Frameworks */,
+				EAE7131B1EEDB73800EFC2BF /* Chartboost.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8085DE1E940A0C0008F5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8085E91E940A0C0008F5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA8085BE1E940A0B0008F5A2 = {
+			isa = PBXGroup;
+			children = (
+				EA8085C91E940A0C0008F5A2 /* Pop the water bubble */,
+				EA8085E41E940A0C0008F5A2 /* Pop the water bubbleTests */,
+				EA8085EF1E940A0C0008F5A2 /* Pop the water bubbleUITests */,
+				EA8085C81E940A0C0008F5A2 /* Products */,
+				EAE7131D1EEDB90F00EFC2BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA8085C81E940A0C0008F5A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA8085C71E940A0C0008F5A2 /* Pop the Bubble.app */,
+				EA8085E11E940A0C0008F5A2 /* Pop the water bubbleTests.xctest */,
+				EA8085EC1E940A0C0008F5A2 /* Pop the water bubbleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA8085C91E940A0C0008F5A2 /* Pop the water bubble */ = {
+			isa = PBXGroup;
+			children = (
+				EAE7131C1EEDB77800EFC2BF /* Pop the water bubble-Bridging-Header.h */,
+				EAE7131A1EEDB73800EFC2BF /* Chartboost.framework */,
+				EA8085CA1E940A0C0008F5A2 /* AppDelegate.swift */,
+				EA8085CC1E940A0C0008F5A2 /* GameScene.sks */,
+				EA18EC591EF3C3110033C231 /* GameLevels.swift */,
+				EA8086001E94155B0008F5A2 /* BubbleMainMenu.swift */,
+				EA8086021E9415A40008F5A2 /* BubbleGameOver.swift */,
+				EA8085CE1E940A0C0008F5A2 /* Actions.sks */,
+				EA8085D01E940A0C0008F5A2 /* GameScene.swift */,
+				EA8085D21E940A0C0008F5A2 /* GameViewController.swift */,
+				EA8085D41E940A0C0008F5A2 /* Main.storyboard */,
+				EA8085D71E940A0C0008F5A2 /* Assets.xcassets */,
+				EA8085D91E940A0C0008F5A2 /* LaunchScreen.storyboard */,
+				EA8085DC1E940A0C0008F5A2 /* Info.plist */,
+				EAF33F721E98C1F100CAF2CF /* click.wav */,
+				EAF33F6F1E98BE4400CAF2CF /* gameover.wav */,
+				EA8085FE1E940F810008F5A2 /* pop.wav */,
+			);
+			path = "Pop the water bubble";
+			sourceTree = "<group>";
+		};
+		EA8085E41E940A0C0008F5A2 /* Pop the water bubbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA8085E51E940A0C0008F5A2 /* Pop_the_water_bubbleTests.swift */,
+				EA8085E71E940A0C0008F5A2 /* Info.plist */,
+			);
+			path = "Pop the water bubbleTests";
+			sourceTree = "<group>";
+		};
+		EA8085EF1E940A0C0008F5A2 /* Pop the water bubbleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA8085F01E940A0C0008F5A2 /* Pop_the_water_bubbleUITests.swift */,
+				EA8085F21E940A0C0008F5A2 /* Info.plist */,
+			);
+			path = "Pop the water bubbleUITests";
+			sourceTree = "<group>";
+		};
+		EAE7131D1EEDB90F00EFC2BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAE713241EEDB93000EFC2BF /* UIKit.framework */,
+				EAE713221EEDB92600EFC2BF /* CoreGraphics.framework */,
+				EAE713201EEDB91900EFC2BF /* Foundation.framework */,
+				EAE7131E1EEDB91000EFC2BF /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA8085C61E940A0B0008F5A2 /* Pop the water bubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8085F51E940A0C0008F5A2 /* Build configuration list for PBXNativeTarget "Pop the water bubble" */;
+			buildPhases = (
+				EA8085C31E940A0B0008F5A2 /* Sources */,
+				EA8085C41E940A0B0008F5A2 /* Frameworks */,
+				EA8085C51E940A0B0008F5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pop the water bubble";
+			productName = "Disappearing Bubbles";
+			productReference = EA8085C71E940A0C0008F5A2 /* Pop the Bubble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA8085E01E940A0C0008F5A2 /* Pop the water bubbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8085F81E940A0C0008F5A2 /* Build configuration list for PBXNativeTarget "Pop the water bubbleTests" */;
+			buildPhases = (
+				EA8085DD1E940A0C0008F5A2 /* Sources */,
+				EA8085DE1E940A0C0008F5A2 /* Frameworks */,
+				EA8085DF1E940A0C0008F5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA8085E31E940A0C0008F5A2 /* PBXTargetDependency */,
+			);
+			name = "Pop the water bubbleTests";
+			productName = "Disappearing BubblesTests";
+			productReference = EA8085E11E940A0C0008F5A2 /* Pop the water bubbleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA8085EB1E940A0C0008F5A2 /* Pop the water bubbleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA8085FB1E940A0C0008F5A2 /* Build configuration list for PBXNativeTarget "Pop the water bubbleUITests" */;
+			buildPhases = (
+				EA8085E81E940A0C0008F5A2 /* Sources */,
+				EA8085E91E940A0C0008F5A2 /* Frameworks */,
+				EA8085EA1E940A0C0008F5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA8085EE1E940A0C0008F5A2 /* PBXTargetDependency */,
+			);
+			name = "Pop the water bubbleUITests";
+			productName = "Disappearing BubblesUITests";
+			productReference = EA8085EC1E940A0C0008F5A2 /* Pop the water bubbleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA8085BF1E940A0B0008F5A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "ShivHari Apps";
+				TargetAttributes = {
+					EA8085C61E940A0B0008F5A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZHF752NSR5;
+						ProvisioningStyle = Automatic;
+					};
+					EA8085E01E940A0C0008F5A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA8085C61E940A0B0008F5A2;
+					};
+					EA8085EB1E940A0C0008F5A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EA8085C61E940A0B0008F5A2;
+					};
+				};
+			};
+			buildConfigurationList = EA8085C21E940A0B0008F5A2 /* Build configuration list for PBXProject "Pop the water bubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA8085BE1E940A0B0008F5A2;
+			productRefGroup = EA8085C81E940A0C0008F5A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA8085C61E940A0B0008F5A2 /* Pop the water bubble */,
+				EA8085E01E940A0C0008F5A2 /* Pop the water bubbleTests */,
+				EA8085EB1E940A0C0008F5A2 /* Pop the water bubbleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA8085C51E940A0B0008F5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF33F731E98C1F100CAF2CF /* click.wav in Resources */,
+				EA8085FF1E940F810008F5A2 /* pop.wav in Resources */,
+				EA8085D61E940A0C0008F5A2 /* Main.storyboard in Resources */,
+				EA8085CD1E940A0C0008F5A2 /* GameScene.sks in Resources */,
+				EA8085D81E940A0C0008F5A2 /* Assets.xcassets in Resources */,
+				EA8085DB1E940A0C0008F5A2 /* LaunchScreen.storyboard in Resources */,
+				EAF33F711E98BE4400CAF2CF /* gameover.wav in Resources */,
+				EA8085CF1E940A0C0008F5A2 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8085DF1E940A0C0008F5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8085EA1E940A0C0008F5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA8085C31E940A0B0008F5A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA18EC5A1EF3C3110033C231 /* GameLevels.swift in Sources */,
+				EA8085D11E940A0C0008F5A2 /* GameScene.swift in Sources */,
+				EA8086011E94155B0008F5A2 /* BubbleMainMenu.swift in Sources */,
+				EA8085D31E940A0C0008F5A2 /* GameViewController.swift in Sources */,
+				EA8085CB1E940A0C0008F5A2 /* AppDelegate.swift in Sources */,
+				EA8086031E9415A40008F5A2 /* BubbleGameOver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8085DD1E940A0C0008F5A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8085E61E940A0C0008F5A2 /* Pop_the_water_bubbleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8085E81E940A0C0008F5A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8085F11E940A0C0008F5A2 /* Pop_the_water_bubbleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA8085E31E940A0C0008F5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA8085C61E940A0B0008F5A2 /* Pop the water bubble */;
+			targetProxy = EA8085E21E940A0C0008F5A2 /* PBXContainerItemProxy */;
+		};
+		EA8085EE1E940A0C0008F5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA8085C61E940A0B0008F5A2 /* Pop the water bubble */;
+			targetProxy = EA8085ED1E940A0C0008F5A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA8085D41E940A0C0008F5A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA8085D51E940A0C0008F5A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA8085D91E940A0C0008F5A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA8085DA1E940A0C0008F5A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA8085F31E940A0C0008F5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA8085F41E940A0C0008F5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA8085F61E940A0C0008F5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZHF752NSR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pop\\ the\\ water\\ bubble",
+				);
+				INFOPLIST_FILE = "Pop the water bubble/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richa.shivhariapps.popthewaterbubble;
+				PRODUCT_NAME = "Pop the Bubble";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA8085F71E940A0C0008F5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Richa Srivastava (ZHF752NSR5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZHF752NSR5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pop\\ the\\ water\\ bubble",
+				);
+				INFOPLIST_FILE = "Pop the water bubble/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.richa.shivhariapps.popthewaterbubble;
+				PRODUCT_NAME = "Pop the Bubble";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA8085F91E940A0C0008F5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Disappearing BubblesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.shivhariApps.Disappearing-BubblesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pop the water bubble.app/Pop the water bubble";
+			};
+			name = Debug;
+		};
+		EA8085FA1E940A0C0008F5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Disappearing BubblesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.shivhariApps.Disappearing-BubblesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pop the water bubble.app/Pop the water bubble";
+			};
+			name = Release;
+		};
+		EA8085FC1E940A0C0008F5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Disappearing BubblesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.shivhariApps.Disappearing-BubblesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Disappearing Bubbles";
+			};
+			name = Debug;
+		};
+		EA8085FD1E940A0C0008F5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Disappearing BubblesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "come.shivhariApps.Disappearing-BubblesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Disappearing Bubbles";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA8085C21E940A0B0008F5A2 /* Build configuration list for PBXProject "Pop the water bubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8085F31E940A0C0008F5A2 /* Debug */,
+				EA8085F41E940A0C0008F5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8085F51E940A0C0008F5A2 /* Build configuration list for PBXNativeTarget "Pop the water bubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8085F61E940A0C0008F5A2 /* Debug */,
+				EA8085F71E940A0C0008F5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8085F81E940A0C0008F5A2 /* Build configuration list for PBXNativeTarget "Pop the water bubbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8085F91E940A0C0008F5A2 /* Debug */,
+				EA8085FA1E940A0C0008F5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8085FB1E940A0C0008F5A2 /* Build configuration list for PBXNativeTarget "Pop the water bubbleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8085FC1E940A0C0008F5A2 /* Debug */,
+				EA8085FD1E940A0C0008F5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA8085BF1E940A0B0008F5A2 /* Project object */;
+}
